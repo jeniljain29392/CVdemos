@@ -1,0 +1,36 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Detect faces image",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/detect_faces.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--image",
+                "rooster.jpg",
+                "--prototxt",
+                "deploy.prototxt.txt",
+                "--model",
+                "res10_300x300_ssd_iter_140000.caffemodel"
+            ]
+        },
+        {
+            "name": "Detect faces video",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/detect_faces_video.py",
+            "console": "integratedTerminal",
+            "args": [
+                "--prototxt",
+                "deploy.prototxt.txt",
+                "--model",
+                "res10_300x300_ssd_iter_140000.caffemodel"
+            ]
+        }
+    ]
+}

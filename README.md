@@ -1,1 +1,1 @@
-# CVdemos
+# Computer Vision demo projects
